@@ -6,8 +6,7 @@ Feature: Storefront Orders
 
 	# Data handover: inventory_item_id and buyer_id are returned from the API and
 	# combined as the postal code ({buyer_id}_{inventory_item_id}) during checkout.
-	# The buyer's first and last name from the API response populate the checkout form.
-	# No UI step uses hardcoded values — all data originates from API responses.
+
 	Scenario: Place storefront order using inventory system data
 		Given an item is created in the inventory system with the following details
 			| name             | status    |
